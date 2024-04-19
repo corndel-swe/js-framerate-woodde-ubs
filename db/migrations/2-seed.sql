@@ -1,4 +1,4 @@
-INSERT INTO films (title, releaseDate, ageRating, genre, runtime, imageURL) VALUES 
+INSERT INTO movies (title, releaseDate, ageRating, genre, runtime, imageURL) VALUES 
 ('The Shawshank Redemption', '1994-09-23', 'R', 'Drama', 142, 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg'),
 ('Parasite', '2019-05-30', 'R', 'Comedy, Drama, Thriller', 132, 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg'),
 ('Spirited Away', '2001-07-20', 'PG', 'Animation, Adventure, Family', 125, 'https://media.themoviedb.org/t/p/w300_and_h450_bestv2/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg'),
@@ -31,94 +31,94 @@ INSERT INTO films (title, releaseDate, ageRating, genre, runtime, imageURL) VALU
 ('Daughters of the Dust', '1991-01-15', 'Not Rated', 'Drama, History', 112, 'https://media.themoviedb.org/t/p/w220_and_h330_face/sk5qednzLeDZMIhto6Oa9QFKOon.jpg');
 
 -- Reviews for "The Shawshank Redemption"
-INSERT INTO reviews (filmId, createdAt, content, rating) VALUES 
-(1, '2020-05-10 14:23:55', 'A timeless masterpiece that captures the essence of hope. Morgan Freeman and Tim Robbins deliver unforgettable performances.', 10),
-(1, '2021-07-16 09:37:42', 'Inspirational and deeply moving. This film stays with you long after you watch it.', 10);
+INSERT INTO reviews (movieId, createdAt, content, rating) VALUES 
+(1, '2020-05-10 14:23:55', 'A timeless masterpiece that captures the essence of hope. Morgan Freeman and Tim Robbins deliver unforgettable performances.', 8),
+(1, '2021-07-16 09:37:42', 'Inspirational and deeply moving. This movie stays with you long after you watch it.', 9);
 
 -- Reviews for "Parasite"
-INSERT INTO reviews (filmId, createdAt, content, rating) VALUES 
+INSERT INTO reviews (movieId, createdAt, content, rating) VALUES 
 (2, '2020-02-14 16:45:30', 'An ingenious blend of social commentary and suspenseful drama. Bong Joon-ho at his best.', 10),
-(2, '2020-12-25 20:15:10', 'Absolutely brilliant. The storytelling and cinematography are top-notch.', 9);
+(2, '2020-12-25 20:15:10', 'Absolutely brilliant. The storytelling and cinematography are top-notch.', 7);
 
 -- Reviews for "Spirited Away"
-INSERT INTO reviews (filmId, createdAt, content, rating) VALUES 
-(3, '2019-06-05 11:20:33', 'A magical journey that captivates both children and adults alike. Miyazaki’s imagination knows no bounds.', 10);
+INSERT INTO reviews (movieId, createdAt, content, rating) VALUES 
+(3, '2019-06-05 11:20:33', 'A magical journey that captivates both children and adults alike. Miyazaki’s imagination knows no bounds.', 8);
 
 -- Reviews for "Black Panther"
-INSERT INTO reviews (filmId, createdAt, content, rating) VALUES 
-(4, '2018-03-01 13:50:20', 'A groundbreaking film in the superhero genre. Wakanda forever!', 9),
+INSERT INTO reviews (movieId, createdAt, content, rating) VALUES 
+(4, '2018-03-01 13:50:20', 'A groundbreaking movie in the superhero genre. Wakanda forever!', 10),
 (4, '2018-11-22 08:33:47', 'Visually stunning and culturally significant. Chadwick Boseman shines as T’Challa.', 9);
 
 -- Reviews for "Crouching Tiger, Hidden Dragon"
-INSERT INTO reviews (filmId, createdAt, content, rating) VALUES 
+INSERT INTO reviews (movieId, createdAt, content, rating) VALUES 
 (5, '2001-08-12 14:55:22', 'A breathtaking blend of romance, action, and adventure. Ang Lee’s masterpiece.', 9);
 
 -- Reviews for "Selma"
-INSERT INTO reviews (filmId, createdAt, content, rating) VALUES 
+INSERT INTO reviews (movieId, createdAt, content, rating) VALUES 
 (6, '2015-02-07 19:30:54', 'A powerful and poignant depiction of a pivotal moment in history. David Oyelowo is compelling as MLK.', 8),
-(6, '2015-05-09 10:27:45', 'An important film that resonates today. It’s a must-watch for its historical significance.', 8);
+(6, '2015-05-09 10:27:45', 'An important movie that resonates today. It’s a must-watch for its historical significance.', 7);
 
 -- Reviews for "Get Out"
-INSERT INTO reviews (filmId, createdAt, content, rating) VALUES 
-(7, '2017-03-25 16:40:10', 'Jordan Peele redefines horror with a brilliant social critique. A film that’s as thought-provoking as it is terrifying.', 10);
+INSERT INTO reviews (movieId, createdAt, content, rating) VALUES 
+(7, '2017-03-25 16:40:10', 'Jordan Peele redefines horror with a brilliant social critique. A movie that’s as thought-provoking as it is terrifying.', 10);
 
 -- Reviews for "Roma"
-INSERT INTO reviews (filmId, createdAt, content, rating) VALUES 
+INSERT INTO reviews (movieId, createdAt, content, rating) VALUES 
 (8, '2018-12-23 12:45:56', 'Alfonso Cuarón’s intimate and beautiful portrayal of domestic life. The cinematography is stunning.', 10),
-(8, '2019-01-15 09:22:34', 'A masterpiece of visual storytelling. This film is a deeply moving experience.', 10);
+(8, '2019-01-15 09:22:34', 'A masterpiece of visual storytelling. This movie is a deeply moving experience.', 10);
 
 -- Reviews for "The Farewell"
-INSERT INTO reviews (filmId, createdAt, content, rating) VALUES 
+INSERT INTO reviews (movieId, createdAt, content, rating) VALUES 
 (9, '2019-08-18 15:37:29', 'A heartwarming story about family, love, and the complexities of cultural identity. Awkwafina delivers a stellar performance.', 9);
 
 -- Reviews for "Moonlight"
-INSERT INTO reviews (filmId, createdAt, content, rating) VALUES 
+INSERT INTO reviews (movieId, createdAt, content, rating) VALUES 
 (10, '2016-11-18 17:45:11', 'A poignant narrative on identity and human connection. Beautifully shot and superbly acted.', 10),
-(10, '2017-02-26 13:59:03', 'An unforgettable film that challenges and transcends genre boundaries.', 10);
+(10, '2017-02-26 13:59:03', 'An unforgettable movie that challenges and transcends genre boundaries.', 10);
 
 -- "The Grand Budapest Hotel"
-INSERT INTO reviews (filmId, createdAt, content, rating) VALUES 
+INSERT INTO reviews (movieId, createdAt, content, rating) VALUES 
 (11, '2020-04-02 09:30:00', 'A delightful escapade with Anderson''s signature style. Pure visual pleasure.', 9),
 (11, '2020-06-15 12:45:00', 'The narrative complexity matches the visual splendor. Truly unique.', 8);
 
 -- "In the Mood for Love"
-INSERT INTO reviews (filmId, createdAt, content, rating) VALUES 
+INSERT INTO reviews (movieId, createdAt, content, rating) VALUES 
 (12, '2021-05-20 14:30:00', 'A hauntingly beautiful exploration of love and longing.', 10);
 
 -- "Amélie"
-INSERT INTO reviews (filmId, createdAt, content, rating) VALUES 
+INSERT INTO reviews (movieId, createdAt, content, rating) VALUES 
 (13, '2019-03-25 10:00:00', 'Quirky, charming, and visually stunning. A feel-good masterpiece.', 9),
 (13, '2019-04-30 11:20:00', 'Tautou captivates in this whimsical tale of love and kindness.', 9);
 
 -- "Pan''s Labyrinth"
-INSERT INTO reviews (filmId, createdAt, content, rating) VALUES 
+INSERT INTO reviews (movieId, createdAt, content, rating) VALUES 
 (14, '2018-08-05 13:00:00', 'A mesmerizing blend of fantasy and harsh reality. Unforgettable.', 10),
 (14, '2018-10-10 15:30:00', 'Del Toro crafts a dark, fairy tale for the ages. A visual masterpiece.', 10);
 
 -- "Slumdog Millionaire"
-INSERT INTO reviews (filmId, createdAt, content, rating) VALUES 
+INSERT INTO reviews (movieId, createdAt, content, rating) VALUES 
 (15, '2017-12-02 17:45:00', 'A thrilling ride through a life less ordinary. Emotionally captivating.', 9);
 
 -- "Hidden Figures"
-INSERT INTO reviews (filmId, createdAt, content, rating) VALUES 
+INSERT INTO reviews (movieId, createdAt, content, rating) VALUES 
 (16, '2020-03-07 16:15:00', 'An uplifting story of brilliance in the face of adversity. Inspiring.', 9),
 (16, '2020-05-22 18:30:00', 'Empowering and educational, it sheds light on unsung heroes. Vital viewing.', 9);
 
 -- "Coco"
-INSERT INTO reviews (filmId, createdAt, content, rating) VALUES 
+INSERT INTO reviews (movieId, createdAt, content, rating) VALUES 
 (17, '2019-11-03 19:45:00', 'A colorful, musical journey about family and dreams. Heartwarming.', 10),
 (17, '2020-01-08 21:00:00', 'Pixar does it again with this visually stunning cultural celebration.', 9);
 
 -- "The Color Purple"
-INSERT INTO reviews (filmId, createdAt, content, rating) VALUES 
+INSERT INTO reviews (movieId, createdAt, content, rating) VALUES 
 (18, '2021-07-12 14:10:00', 'A powerful tale of struggle, strength, and redemption. Deeply moving.', 9);
 
 -- "Life of Pi"
-INSERT INTO reviews (filmId, createdAt, content, rating) VALUES 
+INSERT INTO reviews (movieId, createdAt, content, rating) VALUES 
 (19, '2018-09-15 17:25:00', 'A visually spectacular adventure of faith and survival. Lee''s masterpiece.', 10),
 (19, '2018-12-20 20:30:00', 'An epic journey of self-discovery and incredible storytelling.', 9);
 
 -- "My Neighbor Totoro"
-INSERT INTO reviews (filmId, createdAt, content, rating) VALUES 
+INSERT INTO reviews (movieId, createdAt, content, rating) VALUES 
 (20, '2019-12-30 15:50:00', 'Miyazaki at his best. A timeless classic that''s enchanting for all ages.', 10),
 (20, '2020-02-18 16:05:00', 'A heartwarming exploration of childhood innocence and wonder.', 10);

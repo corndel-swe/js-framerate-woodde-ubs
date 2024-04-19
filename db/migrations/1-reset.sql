@@ -1,8 +1,8 @@
-DROP TABLE IF EXISTS films;
+DROP TABLE IF EXISTS movies;
 DROP TABLE IF EXISTS reviews;
 
--- Create the 'films' table
-CREATE TABLE IF NOT EXISTS films (
+-- Create the 'movies' table
+CREATE TABLE IF NOT EXISTS movies (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT NOT NULL,
     releaseDate DATE NOT NULL,
@@ -15,9 +15,9 @@ CREATE TABLE IF NOT EXISTS films (
 -- Create the 'reviews' table
 CREATE TABLE IF NOT EXISTS reviews (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    filmId INTEGER NOT NULL,
+    movieId INTEGER NOT NULL,
     createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     content TEXT NOT NULL,
     rating INTEGER CHECK (rating >= 1 AND rating <= 10), -- Ensure rating is between 1 and 10
-    FOREIGN KEY (filmId) REFERENCES films(id) ON DELETE CASCADE
+    FOREIGN KEY (movieId) REFERENCES movies(id) ON DELETE CASCADE
 );
