@@ -11,7 +11,10 @@
     "test": "mocha",
     "test:d1e1": "mocha ./test/d1e1.test.js",
     "test:d1e2": "mocha ./test/d1e2.test.js",
-    "test:d1e3": "mocha ./test/d1e3.test.js"
+    "test:d1e3": "mocha ./test/d1e3.test.js",
+    "test:d2e1": "mocha ./test/d2e1.test.js",
+    "test:d2e2": "mocha ./test/d2e2.test.js",
+    "test:d2e3": "mocha ./test/d2e3.test.js"
   },
   "keywords": [],
   "author": "",
