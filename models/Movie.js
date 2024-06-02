@@ -18,7 +18,7 @@ class Movie {
 
   static async findAll(genre) {
     const query = [
-      'select movies.*, avg(reviews.rating) as averageRating',
+      'select movies.*',
       'from movies',
       'left join reviews on movies.id = reviews.movieId'
     ]
