@@ -16,7 +16,7 @@ class Movie {
     'War'
   ]
 
-  static async findAll({ genre = null } = {}) {
+  static async findAll(genre) {
     const query = [
       'select movies.*, avg(reviews.rating) as averageRating',
       'from movies',
