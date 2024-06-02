@@ -19,7 +19,7 @@ with other users.
    npm install
    ```
 
-to install dependencies
+   to install dependencies
 
 3. Run
 
@@ -81,6 +81,6 @@ Head to `CONTRIBUTING.md` to see what to do next
 
 6. Solve and push `d2e3.js` and `d2e3.ejs`
 
-## Workshop
+### Workshop
 
 Head back to `CONTRIBUTING.md` to see what's next!
