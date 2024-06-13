@@ -1,4 +1,4 @@
-# FrameReate
+# FrameRate
 
 Remember FrameRate? It's BACK and better than ever!
 
