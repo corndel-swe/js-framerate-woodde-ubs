@@ -6,6 +6,9 @@ backend.
 It is recommended you spend a bit of time studying the codebase, in particular
 the `models` folder, so you have an idea of how the backend works.
 
+There aren't many user stories but there are plenty of stretch goals so make
+sure you have a go if you get through the main tasks!
+
 ## Day 1
 
 - As a user I can visit `/` to view a list of all movies in the database, so
@@ -38,3 +41,10 @@ the `models` folder, so you have an idea of how the backend works.
 
 - Can you allow the user to sort the movies by release date, either ascending or
   descending?
+
+- Can you add [input validation](https://tech-docs.corndel.com/express/schema-validation.html)
+  (perhaps using Zod) to ensure that the user cannot add invalid data to the database?
+
+- If you're doing input validation, some
+  [error handling](https://tech-docs.corndel.com/express/sending-errors.html)
+  would be good, too!
