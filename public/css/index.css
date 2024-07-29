@@ -1,1 +1,39 @@
 /* TODO: Add your styles here */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.movie-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    
+}
+
+.movie-list__movie {
+    background-color: rgb(1, 1, 44);
+    width: 10em;
+    padding: 1em;
+    display: flex;
+    flex-direction:column-reverse;
+}
+
+.movie-list__movie-title {
+    color: white;
+
+}
+
+.movie-list__movie-release-date {
+    color: white;
+}
+
+.movie-list__link {
+    color: white;
+    display: block;
+}
+
+.movie-list__link:hover {
+    text-decoration: underline;
+    color: blue;
+}
