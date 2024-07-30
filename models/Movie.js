@@ -48,6 +48,13 @@ class Movie {
     const results = await db.raw(query, [id])
     return results
   }
+
+  static async addReview(id, payload) {
+    console.log(payload)
+    const query = 'INSERT INTO reviews (movieId, content, rating) VALUES  (?, ?, ?) returning *;'
+    const result = await db.raw(query, [id, payload.content, payload.rating])
+    return result
+  }
 }
 
 export default Movie

@@ -16,13 +16,30 @@
   <ul class="review-list">
     <% for (let review of reviews) { %>
     <li class="review-list__review">
-      <p class="review-list__rating"><%= review.rating %>10</p>
+      <p class="review-list__rating"><%= review.rating %>/10</p>
       <p class="review-list__content"><%= review.content %></p>
       <p class="review-list__created"><%= review.created %></p>
     </li>
     <% } %>
   </ul>
-
+  <form action="/movies/<%= movie.id %>/reviews" method="post">
+    <label for="content">Comments</label>
+    <textarea id="content"></textarea>
+    <label for="rating">Rating</label>
+    <select id="rating" name="rating">
+      <option value="1">1</option>
+      <option value="1">2</option>
+      <option value="1">3</option>
+      <option value="1">4</option>
+      <option value="1">5</option>
+      <option value="1">6</option>
+      <option value="1">7</option>
+      <option value="1">8</option>
+      <option value="1">9</option>
+      <option value="1">10</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
 </body>
 
 </html>
