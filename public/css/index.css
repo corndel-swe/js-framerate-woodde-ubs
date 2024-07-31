@@ -1,4 +1,47 @@
 /* TODO: Add your styles here */
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.header__title {
+    flex: 1 1 calc(50% - 10px);
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: x-large;
+    font-weight: bold;
+    align-content: center;
+    text-align: center;
+    background-color: goldenrod;
+
+}
+
+.header__topnav {
+    background-color: goldenrod;
+    overflow: hidden;
+    flex: 1 1 100%
+}
+
+.header__topnav a {
+    float: left;
+    color: rgb(1, 1, 44);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: double;
+    font-size: 20px;
+}
+
+.header__logo {
+    background-color: goldenrod;
+}
+
+.header__logo img {
+    width: 150px;
+}
+
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -8,7 +51,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
-    
+
 }
 
 .movie-list__movie {
@@ -16,7 +59,17 @@ body {
     width: 10em;
     padding: 1em;
     display: flex;
-    flex-direction:column-reverse;
+    flex-direction: column-reverse;
+}
+
+.movie-list__movie img {
+    width: 100%;
+
+}
+
+.movie-list__movie img:hover {
+    opacity: 0.5;
+
 }
 
 .movie-list__movie-title {

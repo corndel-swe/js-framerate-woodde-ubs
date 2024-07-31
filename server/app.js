@@ -18,7 +18,7 @@ app.get('/', async (req, res) => {
 
 })
 
-app.get('/movie/:movieId', async (req, res) => {
+app.get('/movies/:movieId', async (req, res) => {
     const movieId = req.params.movieId
     const movie = await Movie.findById(movieId)
     const reviews = await Movie.findReviews(movieId)

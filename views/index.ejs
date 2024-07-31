@@ -1,20 +1,12 @@
-<!-- Add your views in this folder -->
-<!DOCTYPE html>
-<html lang="en-GB">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/index.css">
-  <title>FrameRate</title>
-</head>
+<%- include('partials/header') %>
 
-<body>
-  <h1>FrameRate</h1>
   <ul class="movie-list">
     <% for (let movie of movies) { %>
     <li class="movie-list__movie">
-      <a class="movie-list__link" href="/movie/<%= movie.id %>">
+      <a href="/movies/<%= movie.id %>">
+      <img src="<%= movie.imageURL %>" /></a>
+      <a class="movie-list__link" href="/movies/<%= movie.id %>">
         <h2 class="movie-list__title"><%= movie.title %></h2>
         <h5 class="movie-list__release-date"><%= movie.releaseDate %></h5>
       </a>
@@ -22,6 +14,4 @@
     <% } %>
   </ul>
 
-</body>
-
-</html>
+<%- include('partials/footer') %>
