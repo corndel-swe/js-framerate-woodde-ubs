@@ -1,0 +1,45 @@
+<!-- Add your views in this folder -->
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/index.css">
+  <title>FrameRate | <%= movie.title %></title>
+</head>
+
+<body>
+  <h1><%= movie.title %></h1>
+  <img alt="<%= movie.title %>" src="<%= movie.imageURL %>">
+  <h2>Reviews</h2>
+  <ul class="review-list">
+    <% for (let review of reviews) { %>
+    <li class="review-list__review">
+      <p class="review-list__rating"><%= review.rating %>/10</p>
+      <p class="review-list__content"><%= review.content %></p>
+      <p class="review-list__created"><%= review.created %></p>
+    </li>
+    <% } %>
+  </ul>
+  <form action="/movies/<%= movie.id %>/reviews" method="post">
+    <label for="content">Comments</label>
+    <textarea id="content" name="content"></textarea>
+    <label for="rating">Rating</label>
+    <select id="rating" name="rating">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+
+</html>

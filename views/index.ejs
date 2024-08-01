@@ -1,1 +1,17 @@
-<!-- Add your views in this folder -->
+
+<%- include('partials/header') %>
+
+  <ul class="movie-list">
+    <% for (let movie of movies) { %>
+    <li class="movie-list__movie">
+      <a href="/movies/<%= movie.id %>">
+      <img src="<%= movie.imageURL %>" /></a>
+      <a class="movie-list__link" href="/movies/<%= movie.id %>">
+        <h2 class="movie-list__title"><%= movie.title %></h2>
+        <h5 class="movie-list__release-date"><%= movie.releaseDate %></h5>
+      </a>
+    </li>
+    <% } %>
+  </ul>
+
+<%- include('partials/footer') %>

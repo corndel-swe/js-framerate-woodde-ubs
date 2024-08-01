@@ -8,10 +8,17 @@
 </head>
 
 <body>
-  <h1>Shopping list</h1>
+  <h1>
+    <Shopping list>
+  </h1>
 
   <ul>
     <!-- TODO: loop through `shopping` and render each item inside a <li> element -->
+    <% for (let product of shopping) { %>
+    <li>
+      <%= product %>
+    </li>
+    <% } %>
   </ul>
 </body>
 
